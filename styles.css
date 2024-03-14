@@ -1,0 +1,510 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url(img/fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222222;
+    color: #15ff00;
+    padding: 10px;
+}
+
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+
+.logocontain {
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Espaciado interno para mejorar la apariencia */
+}
+
+.logo-text {
+    font-size: 25px;
+    margin-left: 10px; 
+    font-family: 'Label', cursive;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+nav {
+    display: flex;
+}
+
+nav a {
+    color: #31ff08;
+    text-decoration: none;
+    margin: 0px 10px 0px;
+    font-family: 'Label', cursive;
+}
+
+nav a:hover {
+    color: #00bfff;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #6a4caf;
+    text-shadow: 2px 2px 4px #000000;
+    font-size: 60px;
+    font-family: 'Lobster', cursive;
+}
+
+.anime-box {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #000000;
+    background: url(img/fondo1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    overflow: hidden;
+    padding: 0px;
+}
+
+.anime-box h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.662);
+    background-attachment: fixed;
+    padding: 0px;
+    color: black;
+    text-shadow: 4px 4px 8px #000000ad;
+    font-family: 'Label', cursive;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.anime-box img {
+    border: 3px solid #000000;
+    float: left;
+    margin-right: 10px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-block-end: 10px;
+    width: 310px;
+    height: 450px;
+    border-radius: 25px;
+}
+
+.anime-details {
+    overflow: hidden;
+}
+
+.cajap {
+    text-align: left;
+    background-color: #ffffffc1;
+    border: 0px solid #000000;
+    padding: 0px;
+    border-radius: 25px;
+    margin-top: 0px;
+    margin-block-end: auto;
+    min-height: 480px;
+    min-width: auto;
+    border-top: 4px solid #000;
+}
+
+.cajap p {
+    margin-bottom: 10px;
+    font-family: 'label',cursive;
+}
+
+
+.cajap button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer; /* Añadido para indicar que es un elemento interactivo */
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    border-block-end: #000000 solid 3px;
+    border-right: #000 solid 3px;
+    width: 140px;
+}
+
+.cajap button:hover{
+    color: #000;
+}
+
+/* Estilos específicos para cada botón */
+.btn-crunchyroll,
+.btn-funimation,
+.btn-animeflv,
+.btn-tioanime,
+.btn-jkanime,
+.btn-not-available {
+    display: inline-block;
+    width: auto; /* Haz que el ancho se ajuste automáticamente al contenido */
+    min-width: 150px; /* Ancho mínimo para mantener la forma rectangular */
+    height: auto; /* Altura fija para todos los botones */
+    min-height: 30px;
+    margin: 10px;
+    border-right: 5px solid #000;
+    border-block-end: 5px solid #000;
+    border-radius: 20px;
+    text-align: center;
+    line-height: 30px; /* Alinea verticalmente el texto */
+    text-decoration: none;
+    font-family: 'Label', cursive;
+    box-sizing: border-box;
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    overflow: hidden; /* Oculta cualquier texto que desborde del botón */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos al texto que desborde */
+}
+
+
+/* Estilos específicos para cada enlace */
+.btn-crunchyroll {
+    background-color: #ff4500; /* Naranja característico de Crunchyroll */
+    color: #fff; /* Texto blanco para contrastar */
+}
+
+.btn-funimation {
+    background-color: #9400d3; /* Púrpura característico de Funimation */
+    color: #fff;
+}
+
+.btn-animeflv {
+    background-color: #00bfff; /* Azul característico de AnimeFLV */
+    color: #fff;
+}
+
+.btn-tioanime {
+    background-color: #8b4513; /* Marrón característico de TioAnime */
+    color: #fff;
+}
+
+.btn-jkanime {
+    background-color: #32cd32; /* Verde característico de JKAnime */
+    color: #fff;
+}
+
+/* Estilos para el enlace "No disponible en" */
+.btn-not-available {
+    background-color: #333;
+    color: #c2c2c2;
+}
+
+/* Estilos cuando se presiona el botón */
+.btn-crunchyroll:active,
+.btn-crunchyroll:hover,
+.btn-funimation:active,
+.btn-funimation:hover,
+.btn-animeflv:active,
+.btn-animeflv:hover,
+.btn-tioanime:active,
+.btn-tioanime:hover,
+.btn-jkanime:active,
+.btn-jkanime:hover{
+    background-color: #26ff00; /* Invertir el color de fondo */
+    color: #000; /* Invertir el color del texto */
+}
+
+.btn-not-available:active,
+.btn-not-available:hover {
+    background-color: #ff0000;
+    color: #000000;
+}
+
+
+
+button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+button:hover{
+    color: #15ff00;
+}
+
+#searchBox {
+    padding: 8px;
+    border: 1px solid #000000;
+    border-color: #16b508a9;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#filterComboBox {
+    padding: 8px;
+    background-color: #16b508a9;
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+#animeListContent {
+    margin-top: 10px;
+}
+
+#animeListContent div {
+    margin-bottom: 5px;
+}
+
+#animeList {
+    display: none;
+}
+
+#animeList.hidden {
+    display: none;
+}
+
+
+.anime-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.anime-table th, .anime-table td {
+    border: 3px solid #000000;
+    background: #51ff0050;
+    padding: 8px;
+    text-align: left;
+}
+
+.anime-list-image {
+    max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+    height: 150px;
+}
+
+/*Paginacion*/
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.pagination span{
+    background-color: #000;
+    color: #00ff11;
+    border: 3px solid #00ff11;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button {
+    background-color: #000000;
+    color: #00ff11;
+    border: 3px solid #00ff11;
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination button:hover {
+    background-color: #00ff11;
+    color: #000000;
+}
+
+#paginaActual {
+    color: #00ff11;
+    font-size: 18px;
+    margin: 0 10px;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (max-width: 767px) {
+    body {
+        background: url(img/fondo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    header {
+        padding: 10px 20px; /* Aumentar el relleno del encabezado para que sea más fácil de tocar en dispositivos táctiles */
+    }
+
+    #logo {
+        width: 40px; /* Reducir el tamaño del logo para ajustarse mejor en pantallas pequeñas */
+        height: 40px;
+    }
+
+    .logo-text {
+        font-size: 20px; /* Reducir el tamaño del texto del logo para ajustarse mejor en pantallas pequeñas */
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column; /* Cambiar la dirección del menú de navegación a columna para pantallas pequeñas */
+        align-items: center; /* Centrar los elementos del menú */
+    }
+
+    nav a {
+        margin: 10px 0; /* Aumentar el espacio entre los elementos del menú de navegación para facilitar el toque en dispositivos móviles */
+    }
+
+    .container {
+        margin: 10px; /* Reducir el margen del contenedor principal para aprovechar mejor el espacio en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 40px; /* Reducir el tamaño del título principal para ajustarse mejor en pantallas pequeñas */
+    }
+
+    .anime-box h2 {
+        font-size: 20px; /* Reducir el tamaño del título de la caja de anime para ajustarse mejor en pantallas pequeñas */
+    }
+
+    .anime-box img {
+        border: 3px solid #000000;
+        float: left;
+        margin-right: 10px;
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-block-end: 10px;
+        width: 310px;
+        height: 450px;
+        border-radius: 25px;
+    }
+
+    .anime-details {
+        overflow: hidden;
+    }
+    
+    .cajap {
+        text-align: left;
+        background-color: #ffffffc1;
+        border: 0px solid #000000;
+        padding: 0px;
+        border-radius: 25px;
+        margin-top: 0px;
+        margin-block-end: auto;
+        min-height: 480px;
+        min-width: auto;
+        border-top: 4px solid #000;
+    }
+    
+    .cajap p {
+        margin-bottom: 10px;
+        font-family: 'label',cursive;
+    }
+
+    .cajap button {
+        width: 100%; /* Ajustar el ancho de los botones al 100% del contenedor para pantallas pequeñas */
+    }
+
+    button {
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    
+    button:hover{
+        color: #15ff00;
+    }
+    
+    #searchBox {
+        padding: 8px;
+        border: 1px solid #000000;
+        border-color: #16b508a9;
+        border-radius: 5px;
+        margin-right: 10px;
+    }
+    
+    #filterComboBox {
+        padding: 8px;
+        background-color: #16b508a9;
+        border: 1px solid #000000;
+        border-radius: 5px;
+    }
+    
+    #animeListContent {
+        margin-top: 10px;
+    }
+    
+    #animeListContent div {
+        margin-bottom: 5px;
+    }
+    
+    #animeList {
+        display: none;
+    }
+    
+    #animeList.hidden {
+        display: none;
+    }
+    
+    
+    .anime-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    
+    .anime-table th, .anime-table td {
+        border: 3px solid #000000;
+        background: #51ff0050;
+        padding: 8px;
+        text-align: left;
+    }
+    
+    .anime-list-image {
+        max-width: 100px; /* Ajusta el tamaño máximo de las imágenes */
+        height: 150px;
+    }
+
+    /*Paginacion*/
+    .pagination {
+        flex-wrap: wrap; /* Permite que los botones de paginación se envuelvan si no caben en una línea */
+        justify-content: center; /* Centra los botones horizontalmente */
+    }
+
+    .panpagination span,
+    .pagination button {
+        min-width: auto; /* Ajusta el ancho mínimo automáticamente */
+        margin: 5px; /* Espaciado entre los botones */
+    }
+
+    .pagination button:hover {
+        background-color: #00ff11;
+        color: #000000;
+    }
+
+    #paginaActual {
+        color: #00ff11;
+        font-size: 18px;
+        margin: 0 10px;
+    }
+}

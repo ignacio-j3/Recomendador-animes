@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recomendador de Anime</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="img/icono.png">
+</head>
+<body>
+    <header>
+        <div class="logocontain">
+            <img id="logo" src="img/logo.png" alt="Logo">
+            <span class="logo-text">Huasito Friki</span>
+        </div>
+        <nav>
+            <a href="https://ignacio-j3.github.io/huaso_friki/">🏠 Volver a pagina principal </a>
+            <a href="" id="reloadPageButton2">🔄 Recargar Página</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Recomendador de Animes</h1>
+        <div class="anime-box" id="animeBox">
+            <!-- Aquí se mostrarán los detalles del anime -->
+        </div>
+        <button id="randomAnimeButton">🔀<br>Mostrar Anime Aleatorio</button>
+        <button id="animeListButton" onclick="showAnimeList()">📖<br>Mostrar Lista Registrada</button>
+        <button id="recomendacionFormButton" onclick="showRandomAnime()">📝<br>Recomendar un Anime</button>
+        <button id="reloadPageButton">🔄<br>Recargar Página</button>
+
+
+        <br><br>
+        <div id="recomendacionFormContainer" style="display: none; border: 5px solid #000; border-radius: 10px; background: url(img/fondo3.png) center center no-repeat; background-size: cover;">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfSRPNxkaBFoFaXE_H3jtaJUfGX58T9bEOqj6PiYwrZ9j6KZQ/viewform?embedded=true" width="100%" height="400" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+        </div>
+        
+        <div id="animeList" style="display: none;">
+            <input type="text" id="searchBox" placeholder="Buscar por nombre de anime" oninput="searchAnime()">  <!--lupita de busqueda-->
+
+            <select id="filterComboBox" onchange="filterByLetter()">
+                <option value="" selected>Filtrar por letra</option>
+                <option value="a">A</option>
+                <option value="b">B</option>
+                <option value="c">C</option>
+                <option value="d">D</option>
+                <option value="e">E</option>
+                <option value="f">F</option>
+                <option value="g">G</option>
+                <option value="h">H</option>
+                <option value="i">I</option>
+                <option value="j">J</option>
+                <option value="k">K</option>
+                <option value="l">L</option>
+                <option value="m">M</option>
+                <option value="n">N</option>
+                <option value="ñ">Ñ</option>
+                <option value="o">O</option>
+                <option value="p">P</option>
+                <option value="q">Q</option>
+                <option value="r">R</option>
+                <option value="s">S</option>
+                <option value="t">T</option>
+                <option value="u">U</option>
+                <option value="v">V</option>
+                <option value="w">W</option>
+                <option value="x">X</option>
+                <option value="y">Y</option>
+                <option value="z">Z</option>
+            </select>
+
+            <div id="animeListContent"></div>
+
+            <div id="paginationButtons" class="pagination">
+                <button id="prevPageButton" onclick="cambiarPagina(-1)"><<</button>
+                <span id="paginaActual">1</span>
+                <button id="nextPageButton" onclick="cambiarPagina(1)">>></button>
+            </div>
+
+        </div>
+
+    </div>
+    
+<script type="module" src="data.js"></script>
+<script type="module" src="script_main.js"></script>
+</body>
+</html>
